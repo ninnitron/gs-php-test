@@ -32,15 +32,15 @@
             success: function(x){
                 switch(parseInt(x)){
                     case 1: 
-                        alert("Accesso consentito!");
+                        alert("Access allowed!");
                         $("#content").load("list.php");
                         break;
                     case 2:
-                        alert("Accesso non consentito!\nRiprova.");
+                        alert("Invalid credentials.\nAccess not allowed!");
                         location.reload();
                         break;
                     default:
-                        alert("Qualcosa è andato storto durante il login!\nRiprova.");
+                        alert("Something went wrong during login\nTry again!");
                         location.reload();
                 }
             }
